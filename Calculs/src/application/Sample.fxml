@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onKeyReleased="#verifText" prefHeight="282.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Button fx:id="add" layoutX="47.0" layoutY="179.0" mnemonicParsing="false" onAction="#calculer" text="Addition" />
+      <Button fx:id="sous" layoutX="301.0" layoutY="179.0" mnemonicParsing="false" onAction="#calculer" prefHeight="27.0" prefWidth="101.0" text="Soustraction" />
+      <TextField fx:id="txt2" layoutX="235.0" layoutY="51.0" onKeyReleased="#verifText" />
+      <TextField fx:id="txt1" layoutX="22.0" layoutY="51.0" onAction="#calculer" onKeyReleased="#verifText" />
+      <Label fx:id="lblrest" layoutX="189.0" layoutY="127.0" prefHeight="45.0" prefWidth="143.0" text="Resultat" textFill="#f80000">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="multi" layoutX="304.0" layoutY="239.0" mnemonicParsing="false" onAction="#calculer" prefHeight="27.0" prefWidth="101.0" text="Multiplication" />
+      <Button fx:id="div" layoutX="46.0" layoutY="239.0" mnemonicParsing="false" onAction="#calculer" prefHeight="27.0" prefWidth="70.0" text="Division" />
+   </children>
+</AnchorPane>
